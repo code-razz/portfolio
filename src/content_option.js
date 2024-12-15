@@ -1,3 +1,6 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
 const logotext = "RAJ";
 const meta = {
     title: "Raj Sah",
@@ -50,15 +53,15 @@ const skills = [{
     },
     {
         name: "Javascript",
-        value: 50,
+        value: 55,
     },
     {
         name: "React",
-        value: 40,
+        value: 55,
     },
     {
         name: "Node js",
-        value: 50,
+        value: 55,
     },
     
 ];
@@ -140,15 +143,16 @@ const dataportfolio = [{
     },
 ];
 
+
 const contactConfig = {
     YOUR_EMAIL: "rajsah5556@gmail.com",
     YOUR_FONE: "+91 74829 78787",
     description: "",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: "service_id",
+    YOUR_SERVICE_ID: "service_portfolio",
     YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
+    YOUR_USER_ID: process.env.EMAILJS_PUBLIC_KEY,
 };
 
 const socialprofils = {
